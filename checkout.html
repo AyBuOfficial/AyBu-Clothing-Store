@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - AyBu Clothing Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AyBu</div>
+    </nav>
+
+    <section class="contact">
+        <h2>Checkout</h2>
+
+        <form onsubmit="orderPlaced(event)">
+            <input type="text" placeholder="Full Name" required><br><br>
+
+            <input type="text" placeholder="Phone Number" required><br><br>
+<input type="text" placeholder="City" required><br><br>
+            <input type="text" placeholder="Address" required><br><br>
+<h3>Select Payment Method</h3>
+
+<label><input type="radio" name="payment" required> JazzCash</label><br><br>
+
+<label><input type="radio" name="payment"> Easypaisa</label><br><br>
+
+<label><input type="radio" name="payment"> Cash on Delivery</label><br><br>
+            <button type="submit">Place Order</button>
+        </form>
+
+    </section>
+
+<script>
+function orderPlaced(event) {
+    event.preventDefault();
+
+    let name = document.querySelector('input[placeholder="Full Name"]').value;
+    let phone = document.querySelector('input[placeholder="Phone Number"]').value;
+    let city = document.querySelector('input[placeholder="City"]').value;
+    let address = document.querySelector('input[placeholder="Address"]').value;
+
+    let payment = document.querySelector('input[name="payment"]:checked').parentElement.innerText.trim();
+
+    let order = {
+        name,
+        phone,
+        city,
+        address,
+        payment,
+        date: new Date().toLocaleString()
+    };
+
+    localStorage.setItem("currentOrder", JSON.stringify(order));
+
+    window.location.href = "payment.html";
+}
+
+</script>
+
+</body>
+</html>

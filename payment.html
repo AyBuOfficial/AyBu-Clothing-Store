@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - AyBu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">AyBu</div>
+</nav>
+
+<section class="contact">
+    <h2>Select Payment Method</h2>
+
+   <form onsubmit="confirmPayment(event)"></form>
+
+        <input type="radio" name="payment" required> Cash on Delivery<br><br>
+
+        <input type="radio" name="payment"> JazzCash<br><br>
+
+        <input type="radio" name="payment"> EasyPaisa<br><br>
+
+        <input type="radio" name="payment"> Bank Transfer<br><br>
+
+        <button type="submit">Confirm Payment</button>
+
+    </form>
+</section>
+<script>
+function confirmPayment(event) {
+    event.preventDefault();
+
+    let order = JSON.parse(localStorage.getItem("currentOrder"));
+
+    let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+    orders.push(order);
+
+    localStorage.setItem("orders", JSON.stringify(orders));
+
+    window.location.href = "success.html";
+}
+</script>
+</body>
+</html>

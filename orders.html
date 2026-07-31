@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - AyBu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">AyBu</div>
+</nav>
+
+<section class="contact">
+    <h2>📦 My Orders</h2>
+
+   <h2>📦 My Orders</h2>
+
+<div id="orders-list"></div>
+
+<br>
+
+<a href="profile.html">
+    <button>Back to Profile</button>
+</a>
+</section>
+<script>
+let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+let container = document.getElementById("orders-list");
+
+if (orders.length === 0) {
+    container.innerHTML = "<p>No orders found.</p>";
+} else {
+    orders.forEach((order, index) => {
+        container.innerHTML += `
+            <div style="border:1px solid #ccc;padding:15px;margin-bottom:15px;border-radius:10px;">
+                <p><strong>Order #${1001 + index}</strong></p>
+                <p>Name: ${order.name}</p>
+                <p>Phone: ${order.phone}</p>
+                <p>City: ${order.city}</p>
+                <p>Payment: ${order.payment}</p>
+                <p>Date: ${order.date}</p>
+                <p>Status: ✅ Processing</p>
+
+                <a href="tracking.html">
+                    <button>Track Order</button>
+                </a>
+            </div>
+        `;
+    });
+}
+</script>
+</body>
+</html>

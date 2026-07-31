@@ -1,0 +1,184 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+nav{
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+h1,p{
+    text-align:center;
+}
+.products{
+    text-align:center;
+    padding:60px 20px;
+    background:#ffffff;
+}
+
+.products h2{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.product{
+    width:300px;
+    margin:auto;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+}
+
+.product img{
+    width:100%;
+    border-radius:10px;
+}
+
+.product h3{
+    margin-top:15px;
+}
+
+.product p{
+    font-size:20px;
+    color:#e91e63;
+    font-weight:bold;
+}
+
+.product button{
+    background:#111;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.products-grid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.product{
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f5f5f5;
+}
+
+.about h2 {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin: 8px 0;
+    color: #555;
+}
+#search {
+    padding: 8px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode .product {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #111;
+    color: white;
+}
+
+#darkMode {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.auth-buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+}
+
+.auth-buttons button:hover {
+    background-color: #444;
+}

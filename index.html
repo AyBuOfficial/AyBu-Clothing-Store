@@ -1,185 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AyBu Clothing Store</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AyBu Clothing Store</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header>
-    <<nav>
-    <div class="logo">AyBu</div>
+<nav>
+<div class="logo">AyBu</div>
+
 <input type="text" id="search" placeholder="Search products...">
+
 <button id="darkMode">🌙 Dark Mode</button>
+
 <div class="auth-buttons">
-    <a href="login.html"><button>Login</button></a>
-    <a href="signup.html"><button>Sign Up</button></a>
+<a href="login.html"><button>Login</button></a>
+<a href="signup.html"><button>Sign Up</button></a>
 </div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="about.html">About</a></li>
-       <li><a href="contact.html">Contact</a></li>
-        <li><a href="checkout.html" id="cart">🛒 Cart (0)</a></li>
-    </ul>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="men.html">Men</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="checkout.html" id="cart">🛒 Cart (0)</a></li>
+</ul>
+
 </nav>
+</header>
 
 <section class="hero">
-    <h1>New Fashion Collection 2026</h1>
-    <p>Discover the latest trends in men's and women's fashion.</p>
-
-    <button>Shop Now</button>
+<h1>New Fashion Collection 2026</h1>
+<p>Discover the latest trends in men's fashion.</p>
+<button>Shop Now</button>
 </section>
+
 <section class="products">
 
-    <h2>Featured Products</h2>
+<h2>Featured Products</h2>
 
-   <div class="products-grid">
+<div class="products-grid">
 
-    <div class="product">
-        <img src="images/brown-shirt.jpg" alt="Brown Knit Shirt" width="300">>
-        <h3>Brown knit Shirt</h3>
-        <p>Rs. 2,499</p>
-       <label><strong>Size:</strong></label><br>
+<div class="product">
+<img src="brown-shirt.jpg" alt="Brown Knit Shirt">
 
-Size:
+<h3>Brown Knit Shirt</h3>
+
+<p>Rs. 2,499</p>
+
+<label><strong>Size:</strong></label><br>
+
 <select class="size">
-    <option>S</option>
-    <option>M</option>
-    <option selected>L</option>
-    <option>XL</option>
+<option>S</option>
+<option>M</option>
+<option selected>L</option>
+<option>XL</option>
 </select>
+
+<br><br>
+
 <label><strong>Quantity:</strong></label><br>
 
 <input type="number" class="quantity" value="1" min="1" max="10">
 
 <br><br>
-<br><br>
-        <button>Add to Cart</button>
+
+<button>Add to Cart</button>
 <button class="wishlist">❤️ Wishlist</button>
+
 <a href="brown-knit.html">
-    <button>View Details</button>
+<button>View Details</button>
 </a>
-    </div>
-
-    <div class="product">
-        <img src="images/casual-shirt.jpg" alt="Casual Shirt">
-        <h3>Brown Zip Shirt</h3>
-        <p>Rs. 2,499</p>
-        <label><strong>Size:</strong></label><br>
-
-Size:
-<select class="size">
-    <option>S</option>
-    <option>M</option>
-    <option selected>L</option>
-    <option>XL</option>
-</select>
-<label><strong>Quantity:</strong></label><br>
-
-<input type="number" class="quantity" value="1" min="1" max="10">
-
-<br><br>
-<br><br>
-        <button>Add to Cart</button>
-<button class="wishlist">❤️ Wishlist</button>
-<a href="brown-zip.html">
-    <button>View Details</button>
-</a>
-    </div>-cou
-
-    <div class="product">
-        <img src="images/white-shirt.jpg" alt="white Shirt">
-        <h3>White Premium Shirt</h3>
-        <p>Rs. 2,499</p>
-       <label><strong>Size:</strong></label><br>
-
-
-       Size:
-<select class="size">
-    <option>S</option>
-    <option>M</option>
-    <option selected>L</option>
-    <option>XL</option>
-</select>
-<label><strong>Quantity:</strong></label><br>
-
-<input type="number" class="quantity" value="1" min="1" max="10">
-
-<br><br>
-<br><br>
-        <button>Add to Cart</button>
-<button class="wishlist">❤️ Wishlist</button>
-<a href="white-premium.html">
-    <button>View Details</button>
-</a>
-    </div>
-
-    <div class="product">
-        <img src="images/green-shirt.jpg" alt="green Shirt">
-        <h3>Green Classic Shirt</h3>
-        <p>Rs. 2,499</p>
-       <label><strong>Size:</strong></label><br>
-
-Size:
-<select class="size">
-    <option>S</option>
-    <option>M</option>
-    <option selected>L</option>
-    <option>XL</option>
-</select>
-<label><strong>Quantity:</strong></label><br>
-
-<input type="number" class="quantity" value="1" min="1" max="10">
-
-<br><br>
-<br><br>
-        <button>Add to Cart</button>
-<button class="wishlist">❤️ Wishlist</button>
-<a href="green-classic.html">
-    <button>View Details</button>
-</a>
-    </div>
 
 </div>
+
+<div class="product">
+
+<img src="casual-shirt.jpg" alt="Brown Zip Shirt">
+
+<h3>Brown Zip Shirt</h3>
+
+<p>Rs. 2,499</p>
+
+<label><strong>Size:</strong></label><br>
+
+<select class="size">
+<option>S</option>
+<option>M</option>
+<option selected>L</option>
+<option>XL</option>
+</select>
+
+<br><br>
+
+<label><strong>Quantity:</strong></label><br>
+
+<input type="number" class="quantity" value="1" min="1" max="10">
+
+<br><br>
+
+<button>Add to Cart</button>
+<button class="wishlist">❤️ Wishlist</button>
+
+<a href="brown-zip.html">
+<button>View Details</button>
+</a>
+
+</div>
+<div class="product">
+
+<img src="white-shirt.jpg" alt="White Premium Shirt">
+
+<h3>White Premium Shirt</h3>
+
+<p>Rs. 2,499</p>
+
+<label><strong>Size:</strong></label><br>
+
+<select class="size">
+<option>S</option>
+<option>M</option>
+<option selected>L</option>
+<option>XL</option>
+</select>
+
+<br><br>
+
+<label><strong>Quantity:</strong></label><br>
+
+<input type="number" class="quantity" value="1" min="1" max="10">
+
+<br><br>
+
+<button>Add to Cart</button>
+<button class="wishlist">❤️ Wishlist</button>
+
+<a href="white-premium.html">
+<button>View Details</button>
+</a>
+
+</div>
+
+<div class="product">
+
+<img src="green-shirt.jpg" alt="Green Classic Shirt">
+
+<h3>Green Classic Shirt</h3>
+
+<p>Rs. 2,499</p>
+
+<label><strong>Size:</strong></label><br>
+
+<select class="size">
+<option>S</option>
+<option>M</option>
+<option selected>L</option>
+<option>XL</option>
+</select>
+
+<br><br>
+
+<label><strong>Quantity:</strong></label><br>
+
+<input type="number" class="quantity" value="1" min="1" max="10">
+
+<br><br>
+
+<button>Add to Cart</button>
+<button class="wishlist">❤️ Wishlist</button>
+
+<a href="green-classic.html">
+<button>View Details</button>
+</a>
+
+</div>
+
+</div>
+
 </section>
 
 <section class="about">
-    <h2>Why Choose AyBu?</h2>
-    <p>
-        AyBu Clothing Store brings you premium quality shirts with
-        modern designs, comfortable fabric, and affordable prices.
-        We focus on style, quality, and customer satisfaction.
-    </p>
+<h2>Why Choose AyBu?</h2>
+<p>
+AyBu Clothing Store brings you premium quality shirts with modern designs,
+comfortable fabric and affordable prices.
+We focus on style, quality and customer satisfaction.
+</p>
 </section>
-<section class="contact">
 
-    <script src="script.js"></script>
-    <footer>
+<section class="contact">
+<h2>Contact Us</h2>
+<p>📧 aybuofficial@gmail.com</p>
+<p>📞 +92 3095292711</p>
+<p>📍 Jhang, Pakistan</p>
+</section>
+
+<footer>
 
 <hr>
 
 <p>© 2026 AyBu Clothing Store | All Rights Reserved</p>
 
-<p>
-📧 aybuofficial@gmail.com
-</p>
-
-<p>
-📞 +92 3095292711
-</p>
-
-<p>
-📍 Jhang, Pakistan
-</p>
-
-<p>
-Facebook | Instagram | WhatsApp
-</p>
+<p>Facebook | Instagram | WhatsApp</p>
 
 </footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
